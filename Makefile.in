@@ -1,0 +1,19 @@
+# Uncomment, if Lua is installed to a non-standard location
+LUA_PATH=$(GRAPHAM_ROOT)/lua-5.1.4
+
+# Specify path, if you compile with dSFMT random number generator.
+DSFMT_PATH=$(GRAPHAM_ROOT)/dSFMT
+
+# Specify path, if you compile with Numeric Lua.
+NUMLUA_PATH=$(GRAPHAM_ROOT)/numlua
+
+# Uncomment this if you are compiling with MinGW
+#ENVIRONMENT=mingw
+
+# Change to use another C compiler
+CC=gcc
+
+# Change if you use another Fortran compiler (e.g. g77)
+FC=gfortran
+
+GRAPHAM_VERSION=20130524

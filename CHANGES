@@ -1,0 +1,26 @@
+(Major changes from 20081125)
+
+20130524:
+- Added direct support for censoring (univariate only).
+- coda support added to grapham_read.r (by Ashley Ford).
+
+20101119:
+- Added new adaptation algorithm "ram" ("robust adaptive Metropolis").
+- Added a possibility to use different adaptation weight for scaling 
+  (para.adapt_weight_sc) and matrix factor (para.adapt_weight) adaptation.
+- Possibility to select either random-scan Gibbs sampling by setting 
+  "para.random_scan=1". Otherwise, systematic scanning is used.
+
+20090407:
+- Redundant computations within delayed rejection omitted.
+- Added the possibility to write (binary) adaptation 
+  parameters to a file.
+- A new Lua script for preprocessing the configuration
+  files before they are read in C.
+
+20090219:
+- Added more alternative proposal distributions.
+- Added new "Rao-Blackwellised" algorithms "rbam" and "rbams".
+- The handling of the special case d=1 with algorithm "ams" 
+  was changed: now the case d=1 is handled similarly as d>1.
+
